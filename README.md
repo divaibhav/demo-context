@@ -20,11 +20,17 @@
 6. Display:
 
     6.1 "Welcome User" if the user is logged in
+
+
     6.2    "Please Login" if the user is logged out
 
 
 7. Show:
 
 
-7.1 Login button when logged out
-7.2 Logout button when logged in
+    7.1 Login button when logged out
+
+
+    7.2 Logout button when logged in
+
+
