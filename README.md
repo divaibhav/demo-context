@@ -1,16 +1,30 @@
-# React + Vite
+# Practice Problems
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Problem: Create a React application that uses Context API with state to manage authentication status across the application.
 
-Currently, two official plugins are available:
+### Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+1. Create an AuthContext using createContext.
+2. Store a boolean state isLoggedIn inside the Context Provider.
+3. Provide two functions through context:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+    3.1  login() → sets isLoggedIn to true
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    3.2 logout() → sets isLoggedIn to false
+
+
+4. Wrap the application (or a part of it) with AuthProvider.
+5. Consume the context in a child component using useContext.
+6. Display:
+
+    6.1 "Welcome User" if the user is logged in
+    6.2    "Please Login" if the user is logged out
+
+
+7. Show:
+
+
+7.1 Login button when logged out
+7.2 Logout button when logged in
